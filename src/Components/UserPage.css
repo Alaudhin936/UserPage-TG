@@ -1,139 +1,482 @@
 .body-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-  body{
-overflow: hidden;
-  }
-  .left-bar {
-    box-shadow: 0 0 2px black;
-    max-width: 90px;
-    height: 100vh;
-    text-align: center;
-  }
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.buttons img {
+  width: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
+  background-color: white;
+  border-radius: 30px;
+}
+.buttons {
+  position: relative;
+  top: -80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.posts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+box-shadow: 0 0 5px black;
+width: 70%;
+position: relative;
+left: 126px;
+margin: 10px 0px;
+}
+.et-1{
+  display: none;
+top: 30px;
+padding: 5px;
+position: absolute;
+}
+body{
+  overflow: scroll;
+}
+#dd{
+  position: relative;
+  gap: 10px;
+}
+.post-likes{
+  display: flex;
+  align-items: center;
+gap: 460px;
+}
+.post-likes img{
+ cursor: pointer;
+  width: 25px;
+}
+.post-likes div{
+  display: flex;
+  align-items: center;
+
+}
+.et{
+  position: relative;
+  top: 20px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-color: white;
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+.post-top1{
+  display: flex;
+  align-items: center;
+justify-content: center;
+  gap: 3px;
+}
+#reduce{
+  width: 25px;
+  cursor: pointer;
+}
+.post-img img{
+  width: 600px;
+  height: 90vh;
+}
+.post-top2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ gap: 320px;
+justify-content: space-between;
+ 
+  padding: 2px;
+}
+.post-top #modimg{
+  width: 20px;
+  height: 3.5vh;
+  
+border: none;
+}
+.post-top1 img{
+width: 40px;
+height: 7vh;
+border: 2px solid;
+border-color: rgb(201, 71, 71);
+padding: 5px;
+border-radius: 40px;
+}
+.slide-container {
+  display: flex;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 1px black;
+  left: 10px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.top-bar {
+  display: none;
+}
+.content {
+  display: flex;
+  width: 100%;
+  position: relative;
+  gap: 15px;
+  transition: 0.5s ease-in-out;
+}
+.content div {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  margin: 10px 0px;
+}
+.content div img {
+  width: 50px;
+  cursor: pointer;
+  border: 2.5px solid;
+  border-color: rgb(214, 103, 122);
+  border-radius: 40px;
+  height: 9vh;
+}
+.content div img,
+p {
+  position: relative;
+  margin: 1px 0px;
+}
+
+
+.left-bar {
+  box-shadow: 0 0 2px black;
+  max-width: 90px;
+  height: 100vh;
+  text-align: center;
+}
+.main-bar {
+  position: relative;
+  left: 7px;
+  width: 900px;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  height: 110vh;
+}
+.left-bar {
+  width: 200px;
+}
+.left-sub-bar {
+  display: flex;
+
+  flex-direction: column;
+}
+.left-sub-bar .insta-logo,
+.widgets {
+  top: 10px;
+  position: relative;
+}
+.widgets {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  justify-content: center;
+}
+.likeCount{
+  position: relative;
+   left: -249px;
+}
+.same-widgets {
+  display: flex;
+  margin: 20px 0px;
+  flex-direction: row;
+  align-items: center;
+}
+.same-widgets button{
+  height: 100px;
+}
+.same-widgets img,
+h5 {
+  margin: 0px 7px;
+}
+.adj{
+  position: relative;
+  top: 10px;
+}
+.adjasment {
+  position: relative;
+  left: 10px;
+}
+
+.same-widgets button {
+  margin: 0px 32px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 80px;
+  transition: 0.2s ease-in-out;
+  height: 4vh;
+  background-color: rgb(35, 119, 141);
+}
+.same-widgets button:hover {
+  background-color: rgb(57, 57, 134);
+}
+.left-sub-bar img {
+  width: 30px;
+  cursor: pointer;
+}
+.myProfile img {
+  width: 38px;
+  height: 7vh;
+  box-shadow: 0 0 2px black;
+  position: relative;
+  left: -1px;
+  border-radius: 40px;
+}
+#suggestion #seeall {
+  margin: 0 41px;
+}
+#seeall {
+  font-size: small;
+}
+.right-bar {
+  max-width: 260px;
+  justify-content: center;
+}
+.down-nav {
+  display: none;
+}
+.right-bar div {
+  position: relative;
+  top: 10px;
+}
+.right-widgets img {
+  width: 45px;
+  border-radius: 30px;
+}
+.right-bar img {
+  width: 45px;
+  height: 8vh;
+  border: 1px solid;
+  border-radius: 40px;
+}
+.myProfile img:hover {
+  box-shadow: 0 0 4px black;
+}
+@media (max-width: 1200px) {
   .main-bar {
     position: relative;
-    left: -10px;
-    width: 850px;
- overflow: hidden;
- overflow-y: scroll;
-    text-align: center;
-   height: 110vh;
+    left: 3px;
+    width: 900px;
+  }
+  body{
+    overflow: scroll;
   }
   .left-bar {
-    width: 200px;
+    width: 100px;
   }
-  .left-sub-bar {
-    display: flex;
+  .likeCount{
+    position: relative;
+   left: -235px;
   
-    flex-direction: column;
   }
-  .left-sub-bar .insta-logo,
-  .widgets {
-    top: 10px;
+  .post-likes{
     position: relative;
+  
+    gap: 430px;
   }
-  .widgets {
+  .post-img img{
+    width: 560px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .body-container {
     display: grid;
-    grid-template-rows: auto;
-    grid-gap: 30px;
-    justify-content: center;
+    grid-template-columns: auto auto;
   }
-  .same-widgets {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  body{
+    overflow: hidden;
   }
-  .same-widgets img,
-  h5 {
-    margin: 0px 7px;
-  }
-  .adjasment{
-      position: relative;
-      left: 10px;
-  }
-  .same-widgets button {
-    margin: 0px 32px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    width: 80px;
-    transition: 0.2s ease-in-out;
-    height: 4vh;
-    background-color: rgb(35, 119, 141);
-  }
-  .same-widgets button:hover {
-    background-color: rgb(57, 57, 134);
-  }
-  .left-sub-bar img {
-    width: 30px;
-    cursor: pointer;
-  }
-  .myProfile img {
-    width: 38px;
-    height: 7vh;
-    box-shadow: 0 0 2px black;
+  .main-bar {
+    width: 850px;
     position: relative;
-    left: -1px;
-    border-radius: 40px;
+    left: -160px;
+    overflow-x: scroll;
   }
-  #suggestion #seeall{
-  margin: 0 41px;
+  .left-bar {
+    width: 100px;
   }
-  #seeall{
-      font-size:small;
+}
+@media (max-width: 550px) {
+  .left-bar {
+    display: none;
   }
   .right-bar {
-    max-width: 260px;
-    justify-content: center;
-  
+    display: none;
   }
-  .right-bar div {
+  .top-bar {
+    z-index: 1;
+    height: 18vh;
+    position: fixed;
+    left: -1px;
+    width: 500px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(55, 52, 52);
+    color: white;
+  }
+  .top-bar .rt {
+    display: flex;
+    align-items: center;
+  }
+  .top-bar img {
+    width: 26px;
+  }
+  .top-bar input {
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .top-bar .edit {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    height: 4vh;
+    padding: 5px;
+  }
+body{
+  overflow: hidden;
+}
+  .main-bar {
     position: relative;
-    top: 10px;
+    overflow: scroll;
+    min-width: 420px;
+    margin-left: 170px;
   }
-  .right-widgets img {
-    width: 45px;
-    border-radius: 30px;
+  .top-bar div h2,
+  .rt {
+    margin: 0px 25px;
+    color: white;
+    cursor: pointer;
   }
-  .right-bar img {
-    width: 45px;
+  img {
+    cursor: pointer;
+  }
+  .adj {
+    position: relative;
+    top: 145px;
+  }
+  .slide-container {
+    height: 15vh;
+    position: relative;
+    left: -2px;
+    
+  }
+
+  .top-bar .edit,
+  img {
+    margin: 0px 3px;
+  }
+
+  .down-nav {
+    position: fixed;
+    bottom: 0px;
+    width: 520px;
+    left: 2px;
     height: 8vh;
-    border: 1px solid;
-    border-radius: 40px;
+    align-items: center;
+    background-color: rgb(68, 64, 64);
+    display: flex;
+    gap: 50px;
   }
-  .myProfile img:hover {
-    box-shadow: 0 0 4px black;
+  .down-nav img {
+    width: 30px;
   }
-  @media (max-width: 1100px) {
-    .main-bar {
-      position: relative;
-      left: 3px;
-    }
-    .left-bar {
-      width: 100px;
-    }
+  .main-bar ::placeholder {
+    font-size: larger;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
-  @media (max-width: 1050px) {
-    .body-container {
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-    .main-bar {
-      width: 400px;
-      position: relative;
-      left: -1px;
-    }
-    .left-bar {
-      width: 100px;
-    }
+}
+@media (max-width:450px){
+  .main-bar {
+    position: relative;
+    left: -160px;
+    width: 480px;
   }
-  @media (max-width: 550px) {
-    .left-bar {
-      display: none;
-    }
-    .right-bar {
-      display: none;
-    }
+  .slide-container{
+    position: relative;
+    width: 400px;
   }
-  
+  .top-bar{
+    width: 400px;
+  }
+  .buttons .hie{
+    position: relative;
+    left: -105px;
+  }
+  .buttons{
+    position: relative;
+    
+    gap: -20px;
+  }
+  .posts{
+    width: 280px;
+    position: relative;
+   margin-left: -42px;
+  }
+  .post-top{
+    gap: 150px;
+  }
+  body{
+    overflow: scroll;
+  }
+  .post-img img{
+    width: 300px;
+  }
+  .post-likes{
+    position: relative;
+    left: -1px;
+    gap: 240px;
+  }
+  .likeCount{
+    position: relative;
+    left: -150px;
+  }
+}
+@media (max-width: 750px) {
+  .main-bar {
+    position: relative;
+    left: -160px;
+    width: 480px;
+  }
+  .posts{
+    width: 430px;
+    position: relative;
+    left: 17px;
+  }
+  .post-top{
+    gap: 150px;
+  }
+  .post-img img{
+    width: 380px;
+  }
+  .post-likes{
+    position: relative;
+    left: -1px;
+    gap: 240px;
+  }
+  .likeCount{
+    position: relative;
+    left: -150px;
+  }
+}

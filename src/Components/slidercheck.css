@@ -1,0 +1,43 @@
+body{
+    display: flex;
+
+}
+.slider-container{
+    position: relative;
+    width: 50%;
+   overflow: hidden;   
+    box-shadow: 0 0 15px black;
+  
+}
+#myDiv{
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+#buttons{
+    display: flex;
+    position: relative;
+    top: -127px;
+    align-items: center;
+    justify-content: space-between;
+}
+.content div{
+   width: 900px;
+   max-height: 270;
+   max-width: 200px; 
+    position: relative;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img{
+
+width: 180px;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
