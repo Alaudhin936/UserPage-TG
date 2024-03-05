@@ -321,12 +321,13 @@ h5 {
   .right-bar {
     display: none;
   }
+  
   .top-bar {
     z-index: 1;
     height: 18vh;
     position: fixed;
     left: -1px;
-    width: 500px;
+    width: 550px;
     
     display: flex;
     justify-content: space-around;
@@ -359,7 +360,7 @@ body{
   .main-bar {
     position: relative;
     overflow: scroll;
-    min-width: 420px;
+    min-width: 500px;
     margin-left: 170px;
   }
   .top-bar div h2,
@@ -390,7 +391,7 @@ body{
   .down-nav {
     position: fixed;
     bottom: 0px;
-    width: 520px;
+    width: 590px;
     left: 2px;
     height: 8vh;
     align-items: center;
