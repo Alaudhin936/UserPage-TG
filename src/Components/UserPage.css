@@ -314,7 +314,7 @@ h5 {
     width: 100px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .left-bar {
     display: none;
   }
