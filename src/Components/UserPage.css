@@ -327,7 +327,7 @@ h5 {
     height: 18vh;
     position: fixed;
     left: -1px;
-    width: 550px;
+    width: 580px;
     
     display: flex;
     justify-content: space-around;
@@ -357,10 +357,12 @@ h5 {
 body{
   overflow: hidden;
 }
+
   .main-bar {
     position: relative;
     overflow: scroll;
-    min-width: 500px;
+    min-width: 550px;
+
     margin-left: 170px;
   }
   .top-bar div h2,
