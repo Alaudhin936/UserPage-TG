@@ -418,14 +418,14 @@ body{
   }
   .slide-container{
     position: relative;
-    width: 400px;
+    width: 370px;
   }
   .top-bar{
     width: 400px;
   }
   .buttons .hie{
     position: relative;
-    left: -105px;
+    left: -145px;
   }
   .buttons{
     position: relative;
