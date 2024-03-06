@@ -411,49 +411,140 @@ body{
   }
 }
 @media (max-width:450px){
+  .left-bar {
+    display: none;
+  }
+  .right-bar {
+    display: none;
+  }
+  
+  .top-bar {
+    z-index: 1;
+    height: 18vh;
+    position: fixed;
+    left: -1px;
+    width: 490px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(55, 52, 52);
+    color: white;
+  }
+  .top-bar .rt {
+    display: flex;
+    align-items: center;
+  }
+  .top-bar img {
+    width: 26px;
+  }
+  .top-bar input {
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .top-bar .edit {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 3px black;
+    height: 4vh;
+    padding: 5px;
+  }
+body{
+  overflow: hidden;
+}
+
   .main-bar {
     position: relative;
-    left: -160px;
-    width: 480px;
-  }
-  .slide-container{
-    position: relative;
-    width: 370px;
-  }
-  .top-bar{
-    width: 400px;
-  }
-  .buttons .hie{
-    position: relative;
-    left: -145px;
-  }
-  .buttons{
-    position: relative;
-    
-    gap: -20px;
-  }
-  .posts{
-    width: 280px;
-    position: relative;
-   margin-left: -42px;
-  }
-  .post-top{
-    gap: 150px;
-  }
-  body{
     overflow: scroll;
+    min-width: 550px;
+    margin-left: 150px;
   }
-  .post-img img{
-    width: 300px;
+  .top-bar div h2,
+  .rt {
+    margin: 0px 25px;
+    color: white;
+    cursor: pointer;
   }
-  .post-likes{
+  img {
+    cursor: pointer;
+  }
+  .adj {
     position: relative;
-    left: -1px;
-    gap: 240px;
+    top: 145px;
   }
-  .likeCount{
+  .hie{
     position: relative;
-    left: -150px;
+    left: -160px;
+  }
+  .hie1{
+    position: relative;
+    left: 23px;
+  }
+  .slide-container {
+    height: 15vh;
+    width: 420px;
+    position: relative;
+    left: 28px;
+    
+  }
+.posts{
+  box-shadow: none;
+  border-bottom: 1px solid;
+  padding: 10px 12px;
+}
+.top-bar h2{
+  position: relative;
+  left: -8px;
+}
+.shave{
+  position: relative;
+  left: -40px;
+}
+body{
+  overflow-x: hidden;
+}
+.rt{
+  position: relative;
+  left: -64px;
+}
+#reduce{
+  position: relative;
+  left: -20px;
+}
+.post-top{
+  position: relative;
+  left: -25px;
+  gap: 300px;
+}
+
+.post-img{
+  position: relative;
+  left: -20px;
+}
+  .top-bar .edit,
+  img {
+    margin: 0px 3px;
+  }
+
+  .down-nav {
+    position: fixed;
+    bottom: 0px;
+    width: 590px;
+    left: 2px;
+    height: 8vh;
+    align-items: center;
+    background-color: rgb(68, 64, 64);
+    display: flex;
+    gap: 50px;
+  }
+  .down-nav img {
+    width: 30px;
+  }
+  .main-bar ::placeholder {
+    font-size: larger;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 }
 @media (max-width: 750px) {
